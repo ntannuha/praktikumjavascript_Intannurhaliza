@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Form Registrasi Siswa </title>
+</head>
+<hr></hr>
+<fieldset id="FORMULIR">
+<body>
+	<h1 Align=center>FORMULIR REGISTRASI SISWA</h1>
+	<h1 Align=center>SMA 1 HARAPAN NUSA</h1>
+	<h3 align="center"> Jl. Jogonegoro Km.2 Wonosobo Jawa Tengah </h3>
+	<h3 align="center"> E-mail : sman1wsb@gmail.com Telp/Fax : (0286)321155 </h3>
+</body>
+<hr></hr>
+<body>
+	<form action=" form.html" method="Post">
+			<legend align=center>DATA PRIBADI</legend> 
+		<hr></hr>
+		<table>
+			<h3><tr>
+				<label fro="nama"><td> Nama Lengkap  </label></td>
+				<td><input type="text" name="Nama" value="" size="40" placeholder="masukkan nama anda"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> NISN </label></td>
+				<td><input type="text" name="NISN" value="" size="40" placeholder="masukkan NISN anda"/></td>
+			</tr></h3>
+			<h3><tr>
+				<label><td> Tanggal Lahir  </label></td>
+				<td><input type="text" name="Lahir" value="" size ="40" placeholder="masukkan tempat lahir"/></td>
+				<td><input type="date" name="tanggal_mulai" id="tanggal_mulai" value="2019-10-10"></td> 
+			</h3></tr>
+			<h3><tr>
+				<label><td> Jenis Kelamin </label></td>
+				<td><input type="radio" name="jenis Kelamin" value="laki-laki"  /> laki-laki
+					<input type="radio" name="jenis kelamin" value="perempuan"  />perempuan </td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Agama </label></td>
+				<td><select name="agama">
+					<option value= "islam"> Islam </option>
+					<option value="budha"> Budha </option>
+					<option value ="kristen">kristen </option>
+					<option value="Katolik"> Katolik </option>
+					<option value="Hindu"> Hindu </option>
+					<option value="lainya"> Lainya </option>
+				</td></select>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Golongan Darah </label></td>
+				<td><select name="goldar">
+					<option value= "A"> A </option>
+					<option value="b"> B </option>
+					<option value ="AB"> AB </option>
+					<option value="0"> 0 </option>
+				</td></select>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Tinggi Badan </label></td>
+				<td><input type="text" name="TB" value="" size="40" placeholder="masukkan Tinggi badan anda"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Berat Badan </label></td>
+				<td><input type="text" name="BB" value="" size="40" placeholder="masukkan berat badan anda"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Anak Ke </label></td>
+				<td><input type="text" name="anak" value="" size="40" placeholder="anak ke berapa"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Jumlah Saudara </label></td>
+				<td><input type="text" name="saudara" value="" size="40" placeholder="masukkan jumlah saudara kandung anda"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label><td> Email </label></td>
+				<td><input type="text" name="E-mail" value="" size="40" placeholder="masukkan email Anda"/></td>
+			</tr></h3>
+			<h3><tr>
+				<label><td> NO. Telepon </label></td>
+				<td><input type="text" name="hp" value="" size="40" placeholder="masukkan nomor telepon Anda"/></td>
+			</tr></h3>
+		</table>
+<br></br>
+<hr></hr>
+			<legend align=center>DATA TEMPAT TINGGAL</legend>
+<hr></hr>
+		<table>
+			<h3><tr>
+				<label for="Alamat" ><td> Alamat Lengkap  </label></td>
+				<td><textarea name="Alamat" value="" rows="10" cols="45" size="40" placeholder="masukkan alamat lengkap"></textarea></td>
+			</h3></tr>					
+			<h3><tr>
+				<label for="kec"><td> Kecamatan </label></td>
+				<td><input type="text" name="kec" value="" size="40" placeholder="masukkan nama Kecamatan"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="kab"><td> Kabupaten </label></td>
+				<td><input type="text" name="kab" value="" size="40" placeholder="masukkan nama kabupaten"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="prov"><td> Provinsi  </label></td>
+				<td><input type="text" name="prov" value="" size="40" placeholder="masukkan nama Provinsi"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="KPos"><td> Kode Pos </label></td>
+				<td><input type="text" name="KPos" value="" size="40" placeholder="masukkan Kode pos"/></td>
+			</h3></tr>
+		</table>
+<br></br>
+<hr></hr>
+			<legend align=center>DATA ORANG TUA</legend>
+<hr></hr>
+		<h3>AYAH</h3>
+		<table>
+			<h3><tr>
+				<label for="namaayah"><td> Nama Lengkap </label></td>
+				<td><input type="text" name="namaayah" value="" size="40" placeholder="masukkan nama Ayah"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="status"><td> Status Ayah </label></td>
+				<td><input type="checkbox" name="status"  /> Hidup </td>
+				<td><input type="checkbox" name="status" /> Meninggal </td>
+			</h3></tr>
+			<h3><tr>
+				<td><label for="nikayah"> NIK</label></td>
+				<td><input type="text" name="nikayah" value="" size="40" placeholder="masukkan NIK Ayah"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="tanggalayah"><td> Tanggal Lahir </label></td>
+				<td><input type="text" name="tanggalayah" value="" size ="40" placeholder="masukkan tempat lahir"/></td>
+				<td><input type="date" name="tanggalayah" id="tanggal_mulai" value="2019-10-10"></td> 
+			</h3></tr>
+			<h3><tr>
+				<label for="hpayah"><td>Nomor Telepon</label></td>
+				<td><input type="text" name="hpayah" value="" size="40" placeholder="masukkan Nomor Telepon"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="gaweayah"><td> Pekerjaan  </label></td>
+				<td><input type="checkbox" name="gaweayah" /> PNS </td>
+				<td><input type="checkbox" name="gaweayah" /> TNI </td>
+				<td><input type="checkbox" name="gaweayah"/> POLRI </td>
+				<td><input type="checkbox" name="gaweayah" /> Wiraswasta </td>
+				<td><input type="checkbox" name="gaweayah"/> Petani </td>
+				<td><input type="checkbox" name="gaweayah" /> Lainya </td>
+				<td><input type="text" name="gaweayah" value="" size="40" placeholder="Lainya"> </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="gajiayah"><td> Pendapatan </label></td>
+				<td><input type="checkbox" name="gajiayah"/> <1.000.000 </td>
+				<td><input type="checkbox" name="gajiayah"/> 1.000.000- 3.000.000 </td>
+				<td><input type="checkbox" name="gajiayah"/> >3.000.000 </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="pddknayah"><td> Pendidikan Terakhir </td></label>
+				<td><input type="checkbox" name="pddknayah"/> SD/MI </td>
+				<td><input type="checkbox" name="pddknayah"/> SMP/MTS </td>
+				<td><input type="checkbox" name="pddknayah"/> SMA/SMK/MA </td>
+				<td><input type="checkbox" name="pddknayah"/> S1 </td>
+				<td><input type="checkbox" name="pddknayah"/> S2 </td>
+				<td><input type="checkbox" name="pddknayah"> Lainya</td>
+				<td><input type="text" name="pddknayah" value="" size="40" placeholder="Lainya"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="Alamatay" ><td> Alamat Lengkap  </label></td>
+				<td><textarea name="Alamatay" value="" rows="10" cols="45" size="40" placeholder="masukkan alamat lengkap"></textarea></td>
+			</h3></tr>
+		</table>
+<hr></hr>
+		<h3>IBU</h3>
+		<table>
+			<h3><tr>
+				<label for="namaibu"><td> Nama Lengkap </label></td>
+				<td><input type="text" name="namaibu" value="" size="40" placeholder="masukkan nama Ibu"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="statusibu"><td> Status Ibu </label></td>
+				<td><input type="checkbox" name="statusibu"  /> Hidup </td>
+				<td><input type="checkbox" name="statusibu" /> Meninggal </td>
+			</h3></tr>
+			<h3><tr>
+				<td><label for="nikibu"> NIK</label></td>
+				<td><input type="text" name="nikibu" value="" size="40" placeholder="masukkan NIK Ibu"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="tanggalibu"><td> Tanggal Lahir </label></td>
+				<td><input type="text" name="tanggalibu" value="" size ="40" placeholder="masukkan tempat lahir"/></td>
+				<td><input type="date" name="tanggalibu" id="tanggal_mulai" value="2019-10-10"></td> 
+			</h3></tr>
+			<h3><tr>
+				<label for="hpibu"><td>Nomor Telepon</label></td>
+				<td><input type="text" name="hpibu" value="" size="40" placeholder="masukkan Nomor Telepon"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="gaweibu"><td> Pekerjaan  </label></td>
+				<td><input type="checkbox" name="gaweibu" /> PNS </td>
+				<td><input type="checkbox" name="gaweibu" /> TNI </td>
+				<td><input type="checkbox" name="gaweibu"/> POLRI </td>
+				<td><input type="checkbox" name="gaweibu" /> Wiraswasta </td>
+				<td><input type="checkbox" name="gaweibu"/> Petani </td>
+				<td><input type="checkbox" name="gaweibu" /> Lainya </td>
+				<td><input type="text" name="gaweibu" value="" size="40" placeholder="Lainya"> </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="gajiibu"><td> Pendapatan </label></td>
+				<td><input type="checkbox" name="gajiibu"/> <1.000.000 </td>
+				<td><input type="checkbox" name="gajiibu"/> 1.000.000- 3.000.000 </td>
+				<td><input type="checkbox" name="gajiibu"/> >3.000.000 </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="pddknibu"><td> Pendidikan Terakhir </td></label>
+				<td><input type="checkbox" name="pddknibu"/> SD/MI </td>
+				<td><input type="checkbox" name="pddknibu"/> SMP/MTS </td>
+				<td><input type="checkbox" name="pddknibu"/> SMA/SMK/MA </td>
+				<td><input type="checkbox" name="pddknibu"/> S1 </td>
+				<td><input type="checkbox" name="pddknibu"/> S2 </td>
+				<td><input type="checkbox" name="pddknibu"> Lainya</td>
+				<td><input type="text" name="pddknibu" value="" size="40" placeholder="Lainya"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="Alamatibu" ><td> Alamat Lengkap  </label></td>
+				<td><textarea name="Alamatibu" value="" rows="10" cols="45" size="40" placeholder="masukkan alamat lengkap"></textarea></td>
+			</h3></tr>
+		</table>
+	<hr></hr>
+		<h3>WALI</h3>
+		<table>
+			<h3><tr>
+				<label for="namawali"><td> Nama Lengkap </label></td>
+				<td><input type="text" name="namawali" value="" size="40" placeholder="masukkan nama Wali"/></td>
+			</h3></tr>
+			<h3><tr>
+				<label for="statuswali"><td> Status Wali </label></td>
+				<td><input type="checkbox" name="statuswali"  /> Hidup </td>
+				<td><input type="checkbox" name="statuswali" /> Meninggal </td>
+			</h3></tr>
+			<h3><tr>
+				<td><label for="nikwali"> NIK</label></td>
+				<td><input type="text" name="nikwali" value="" size="40" placeholder="masukkan NIK Wali"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="tanggalwali"><td> Tanggal Lahir </label></td>
+				<td><input type="text" name="tanggalwali" value="" size ="40" placeholder="masukkan tempat lahir"/></td>
+				<td><input type="date" name="tanggalwali" id="tanggal_mulai" value="2019-10-10"></td> 
+			</h3></tr>
+			<h3><tr>
+				<label for="hpwali"><td>Nomor Telepon</label></td>
+				<td><input type="text" name="hpwali" value="" size="40" placeholder="masukkan Nomor Telepon"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="gawewali"><td> Pekerjaan  </label></td>
+				<td><input type="checkbox" name="gawewali" /> PNS </td>
+				<td><input type="checkbox" name="gawewali" /> TNI </td>
+				<td><input type="checkbox" name="gawewali"/> POLRI </td>
+				<td><input type="checkbox" name="gawewali" /> Wiraswasta </td>
+				<td><input type="checkbox" name="gawewali"/> Petani </td>
+				<td><input type="checkbox" name="gawewali" /> Lainya </td>
+				<td><input type="text" name="gawewali" value="" size="40" placeholder="Lainya"> </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="gajiwali"><td> Pendapatan </label></td>
+				<td><input type="checkbox" name="gajiwali"/> <1.000.000 </td>
+				<td><input type="checkbox" name="gajiwali"/> 1.000.000- 3.000.000 </td>
+				<td><input type="checkbox" name="gajiwali"/> >3.000.000 </td>
+			</h3></tr>
+			<h3><tr>
+				<label for="pddknwali"><td> Pendidikan Terakhir </td></label>
+				<td><input type="checkbox" name="pddknwali"/> SD/MI </td>
+				<td><input type="checkbox" name="pddknwali"/> SMP/MTS </td>
+				<td><input type="checkbox" name="pddknwali"/> SMA/SMK/MA </td>
+				<td><input type="checkbox" name="pddknwali"/> S1 </td>
+				<td><input type="checkbox" name="pddknwali"/> S2 </td>
+				<td><input type="checkbox" name="pddknwali"> Lainya</td>
+				<td><input type="text" name="pddknwali" value="" size="40" placeholder="Lainya"></td>
+			</tr></h3>
+			<h3><tr>
+				<label for="Alamatwali" ><td> Alamat Lengkap  </label></td>
+				<td><textarea name="Alamatwali" value="" rows="10" cols="45" size="40" placeholder="masukkan alamat lengkap"></textarea></td>
+			</h3></tr>
+		</table>
+<br></br>
+		<hr></hr>
+			<legend align=center>DATA SEKOLAH</legend>
+		<hr></hr>
+		<table>
+			<h3><tr>
+				<label for="namsek"><td>Nama Sekolah Lama</td></label>
+				<td><input type="text" name="namsek" value="" size="40" placeholder="masukkan nama sekolah"></td>
+			</h3></tr>
+			<tr><h3>
+				<label for="NPSN"><td> NPSN</label></td>
+				<td><input type="text" name="NPSN" value="" size="40" placeholder="masukkan Nomor NPSN"></td>
+			</tr></h3>
+			<tr><h3>
+				<label for="alamatsek"><td>Alamat Sekolah</label></td>
+				<td><input type="text" name="alamatsek" value="" size="40" placeholder="masukkan alamat sekolah"></td>
+			</tr></h3>
+		</table>
+<br></br>
+		<hr></hr>
+			<legend align=center>NILAI UNBK</legend>
+		<hr></hr>
+		<table>
+			<tr><h3>
+				<label for="Matematika"><td>Nilai Matematika</label></td>
+				<td><input type="text" name="Matematika" value="" size="40" placeholder="masukkan nilai "></td>
+			</tr></h3>
+			<tr><h3>
+				<label for="IPA"><td>Nilai IPA</td></label>
+				<td><input type="text" name="IPA" value="" size="40" placeholder="masukkan nilai "></td>
+			</tr></h3>
+			<tr><h3>
+				<label for="bindo"><td>Nilai Bahasa Indonesia</td></label>
+				<td><input type="text" name="bindo" value="" size="40" placeholder="masukkan nilai "></td>
+			</tr></h3>
+			<tr><h3>
+				<label for="bing"><td>Nilai Bahasa Inggris</label></td>
+				<td><input type="text" name="bing" value="" size="40" placeholder="masukkan nilai"></td>
+			</tr></h3>
+		</table>
+		<br></br>
+		<br></br>
+			<div>
+				<button><input type="submit" name="login"></button>
+			</div>
+</body>
+</fieldset>	
+</html>
+
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+					                                                                                                
+
+

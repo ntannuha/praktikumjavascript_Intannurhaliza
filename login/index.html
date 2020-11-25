@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html id="lang">
+    <head>
+        <title>login </title>
+        <style type="text/css">
+            body {
+                font-family: 'Times New Roman';
+                background-image: url(unnamed.jpg);
+                background-size: cover;
+                font-size: 16pt;
+                color: blueviolet;
+            }
+            #form {
+                background-color: burlywood;
+                width: 300px;
+                height: 370px;
+                border-radius: 7px;
+                margin-top: 100px;
+                margin-left: 500px;
+                text-align: center;
+                
+            }
+            #sedat {
+                text-align: center;
+                color: rgb(14, 14, 180);
+                padding: 17px;
+                font-size: 20pt;
+            }
+            hr{
+                width: 90%;
+                height: 5px;
+                background: rgb(167, 118, 56);
+            }
+            .masukkan {
+                width: 80%;
+                margin-top: 5px;
+                height: 20px;
+                border-bottom: 3px;
+                border: thin;
+                background: transparent;
+                padding: 10px;
+            }
+            .login {
+                margin-top: 10px;
+                width: 85%;
+                height: 50px;
+                background:rgb(167, 118, 56);
+                color: white;
+                border-radius: 5px;
+                font-size: 17pt;
+            }
+            
+            
+        </style>
+    </head>
+    <body>
+        <form method="get" id="form" onsubmit="return validasi()">
+        <h2 id="sedat"> KELAS SISTEM INFORMASI PAGI </h2>
+        <hr/>
+        <div>
+            <label id="username"><b>Username</label></b> 
+        </div>
+        <div >
+            <input  type="text" class="masukkan" name="username" placeholder="masukkan username">
+        </div>
+        <div>
+            <label id="password"><b>Password</label></b>
+        </div>
+        <div>
+            <input type="password" class="masukkan" name="password" placeholder="masukkan kata sandi">
+        </div>
+        <input class="login" type="submit" name="submit" value="login" onclick="validasi()">
+        </form>
+    </body>
+    <script type="text/javascript">
+        function validasi (){
+            let username = document.forms["form"] ["username"].value ;
+            let password = document.forms["form"] ["password"].value ;
+            if (username== "ahmad2017" && password == "integrity"){
+                alert ("LOGIN SUKSES");
+                window.open(" BARU (2).html ");
+                return true;
+                
+            }
+            else if (username == "" && password==""){
+                alert ("masukkan password dan username anda");
+
+            }
+            else {
+                alert ("username atau password yang anda masukkan salah");
+            }
+        }
+
+    </script>
+</html> 

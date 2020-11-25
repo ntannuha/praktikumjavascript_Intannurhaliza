@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+    <head>
+        <title> IMAGE PICKER</title>
+        <style>
+            form{
+                margin: 20px;
+            }
+            img{
+                width: 50%;
+            }
+        </style>
+        <script>
+            function pilih(){
+                let list_pantai = document.getElementById("pantai") ;
+                let me = list_pantai.selectedIndex ; 
+                console.log ("pantai index ke " +  list_pantai[me].value);
+
+                let area_foto = document.getElementById("foto");
+                area_foto.src= "image/" + list_pantai[me].value+".jpg" ;
+                alert ("Foto dari pantai " + list_pantai[me].value) ;
+    
+            }
+    
+        </script>
+    </head>
+    <body>
+        <form id="picker">
+            Lihat Pantai di Indonesia : 
+            <select id="pantai" onchange="pilih();">
+                <option value="wedas">pantai di Indonesia</option>
+                <option value="Ora">Pantai Ora</option>
+                <option value="Pink">Pantai Pink</option>
+                <option value="Nembrala">Pantai Nembrala </option>
+                <option value="Nihiwatu">Pantai Nihiwatu</option>
+                <option value="Sawarna">Pantai Sawarna</option>
+                <option value="Tominibay">Pantai Tominibay</option>
+                <option value="Pasir Putih">Pantai Pasir Putih</option>
+                <option value="Padang-Padang">Pantai Padang-Padang</option>
+                <option value="Gili Trawangan">Pantai Gili Trawangan </option>
+            </select>
+        </form>
+        <br/>
+        <img src="image/wedas.jpg" id="foto">
+    </body>
+    
+</html>

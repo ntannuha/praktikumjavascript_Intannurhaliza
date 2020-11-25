@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width-device-width, initial-scale-1.0">
+        <title>VALIDATION FORM </title>
+        <style>
+            body{
+                background-color: antiquewhite;
+                font-family: Arial;
+            }
+            h1{
+                text-align: center;
+                font-family: 'Times New Roman';
+                color: blueviolet;
+
+            }
+            #form{ 
+                width: 700px;
+                height: 500px;
+                margin-top: 90px;
+                margin-left: 350px;
+                box-sizing: border-box;
+            }
+            .ranah{
+                font-size: 15pt;
+                color: darkslategrey;
+            }
+            input{
+                padding: 11px;
+                width: 90%;
+                height: 20px;
+                margin: 10px 8px;
+            }
+            #submit {
+                width: 93%;
+                height: 30px;
+
+            }
+            p{
+                text-align: center;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form id="form">
+            <h1>PEMESANAN TIKET </h1>
+            <label class="ranah">Nama Pemesan :</label>
+            <input type="text" required  name="nama" id="nama" placeholder="masukkan nama lengkap">
+            <label class="ranah">Email :</label>
+            <input type="email" required=""  name="mail" id="mail" placeholder="masukkan email aktif">
+            <hr/>
+            <label class="ranah">Tujuan Keberangkatan</label>
+            <input type="text"  required="" id="tujuan" name="tujuan" placeholder="masukkan tujuan pemberangkatan">
+            <label class="ranah">Jam Keberangkatan</label>
+            <input type="time" required="" id="jam" name="jam" >
+            <label class="ranah">Jumlah Tiket</label>
+            <input type="number" required="" min="1" max="10" id="tiket" name="tiket" >
+            <div>
+                <input type="button" value="submit" id="submit" onclick="validasi()">
+            <br/>
+            <br/>
+            </div>
+        </form>
+        <br/>
+        <br/>
+        <br/>
+        <h1 id="rekap"></h1>
+        <p id="hasilnama"></p>
+        <br/>
+        <p id="hasilmail"></p>
+        <br/>
+        <p id="hasiltujuan"></p>
+        <br/>
+        <p id="hasiljam"></p>
+        <br/>
+        <p id="hasiltiket"></p>
+        <br/>
+        <h1 id="thanks"></h1>
+           
+            
+    </body>
+    <script type="text/javascript">
+        function validasi (){
+            let nama = document.getElementById("nama").value ;
+            let mail = document.getElementById("mail").value ;
+            let tujuan = document.getElementById("tujuan").value ;
+            let jam = document.getElementById ("jam").value ;
+            let tiket = document.getElementById("tiket").value ;
+
+            if (nama !="" && mail !="" && tujuan !="" && jam!="" && tiket != ""){
+                document.getElementById("rekap").innerHTML = 'PEMESANAN';
+                document.getElementById("hasilnama").innerHTML = 'Nama Pemesan              : '+ nama ;
+                document.getElementById("hasilmail").innerHTML = 'E-mail Pemesan            : '+ mail ;
+                document.getElementById("hasiltujuan").innerHTML = 'Tujuan Pemberangkatan   : ' +tujuan ;
+                document.getElementById("hasiljam").innerHTML= 'Jam Keberangkatan           : '+ jam ;
+                document.getElementById("hasiltiket").innerHTML= 'Jumlah Tiket yang dipesan : '+ tiket ; 
+                document.getElementById("thanks").innerHTML= 'TERIMAKASIH';
+            }
+            else {
+                alert ("masukkan data dengan benar")
+                return false
+            }
+        }
+    </script>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Menu Pesan </title>
+        <style>
+            body{
+                background-color: beige;
+            }
+            h3{
+                text-align: left;
+                font-size: 20pt;
+                color: brown;
+            }
+            #isi {
+                width: 100%;
+                font-family: 'Gill Sans';
+                font-size: 20pt;
+            }
+            #chat {
+                width: 40%;
+                height: 50px;
+                background-color: antiquewhite;
+                font-size: 15pt;
+            }
+            #Kirim {
+                height: 50px;
+                background-color: burlywood;
+                color: antiquewhite;
+            }
+
+        </style>
+    </head>
+    <body>
+        <form method="get" onsubmit="return send();">
+            <h3>Ketik Pesan Anda</h3>
+            <input type="text" name="chat" id="chat" placeholder="masukkan pesan anda" >
+            <input type="submit" id="Kirim" onclick="return send();" value="Send" >
+        </form>
+        <div id="isi">
+
+        </div>
+    </body>
+    <script>
+        function send (){
+
+        let chat = document.getElementById("chat").value ;
+        document.getElementById("isi").innerHTML += chat +"<br/>";
+        document.getElementById("chat").value = "" ;
+        return false ;
+    }
+    </script>
+</html>
